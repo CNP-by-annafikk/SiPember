@@ -1,11 +1,14 @@
-import React, { Component } from 'react'
+// Import Styling
+import './index.css'
 
-export default class App extends Component {
-  render() {
-    return (
-      <>
-      <h1>Hello World!</h1>
-      </>
-    )
-  }
+// Import Function
+import React from 'react'
+import BerandaSection from './pages/Beranda'
+
+export default function App() {
+  return (
+    <>
+      <BerandaSection />
+    </>
+  )
 }
