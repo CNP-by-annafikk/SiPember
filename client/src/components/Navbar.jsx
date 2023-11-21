@@ -1,5 +1,6 @@
 import { Disclosure } from '@headlessui/react'
 import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline'
+import Logo from '../assets/logo-putih.png'
 
 const navigation = [
     { name: 'Beranda', href: '#', current: true },
@@ -18,15 +19,15 @@ export default function NavbarSection() {
             {({ open }) => (
                 <div className="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
                     <div className="flex h-16 items-center justify-between">
-                        <div className="flex-shrink-0 flex items-center"> {/* Logo dan teks SIPB */}
+                        <div className="flex-shrink-0 flex items-center"> {/* Logo dan Teks SIPB */}
                             <img
                                 className="h-8 w-auto mr-2"
-                                src="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=500"
+                                src={Logo}
                                 alt="Your Company"
                             />
                             <span className="text-white text-lg font-bold">SIPB</span>
                         </div>
-                        <div className="hidden sm:flex sm:ml-6"> {/* Menu pada desktop */}
+                        <div className="hidden sm:flex sm:ml-6"> {/* Menu Desktop */}
                             <div className="flex space-x-4">
                                 {navigation.map((item) => (
                                     <a
@@ -43,7 +44,7 @@ export default function NavbarSection() {
                                 ))}
                             </div>
                         </div>
-                        <div className="sm:hidden"> {/* Tombol Menu untuk tampilan mobile */}
+                        <div className="sm:hidden"> {/* Menu Mobile */}
                             <Disclosure.Button className="inline-flex items-center justify-center rounded-md p-2 text-gray-400 hover:bg-gray-700 hover:text-white focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white">
                                 <span className="sr-only">Open main menu</span>
                                 {open ? (
@@ -54,7 +55,7 @@ export default function NavbarSection() {
                             </Disclosure.Button>
                         </div>
                     </div>
-                    {/* Panel menu untuk tampilan mobile */}
+                    {/* Panel Menu Mobile */}
                     <Disclosure.Panel className="sm:hidden">
                         <div className="space-y-1 px-2 pb-3 pt-2">
                             {navigation.map((item) => (

@@ -1,14 +1,13 @@
-// Import Styling
-import './index.css'
-
-// Import Function
-import React from 'react'
+// Import
+import React, { Component } from 'react'
 import BerandaSection from './pages/Beranda'
 
-export default function App() {
-  return (
-    <>
-      <BerandaSection />
-    </>
-  )
+export default class App extends Component {
+  render() {
+    return (
+      <>
+        <BerandaSection />
+      </>
+    )
+  }
 }
