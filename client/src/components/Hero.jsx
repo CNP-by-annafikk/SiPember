@@ -1,4 +1,4 @@
-import BGVideo from '../assets/background-video.png'
+import BGVideo from '../assets/bg-image/background-video.png'
 // import Typewriter from './Typerwriter';
 
 export default function HeroSection() {
