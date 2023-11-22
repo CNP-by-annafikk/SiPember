@@ -1,5 +1,6 @@
 import { Footer } from 'flowbite-react';
 import { BsTiktok, BsFacebook, BsGithub, BsDiscord, BsTwitter, BsLinkedin } from 'react-icons/bs';
+import Logo from '../assets/logo-biru.png'
 
 export default function FooterSection() {
     return (
@@ -9,7 +10,7 @@ export default function FooterSection() {
                     <div>
                         <Footer.Brand
                             href="#"
-                            src="https://flowbite.com/docs/images/logo.svg"
+                            src={Logo}
                             alt="Logo SIPB"
                             name="SIPB"
                             onClick={() => window.open('https://annafikk.my.id')}
@@ -17,24 +18,26 @@ export default function FooterSection() {
                     </div>
                     <div className="grid grid-cols-2 gap-8 sm:mt-4 sm:grid-cols-3 sm:gap-6">
                         <div>
-                            <Footer.Title title="about" />
+                            <Footer.Title title="Tentang" />
                             <Footer.LinkGroup col>
-                                <Footer.Link href="#">Flowbite</Footer.Link>
-                                <Footer.Link href="#">Tailwind CSS</Footer.Link>
+                                <Footer.Link href="#beranda1" onClick={() => scrollToSection('hero')}>Pengenalan SDGs</Footer.Link>
+                                <Footer.Link href="#" onClick={() => scrollToSection('hero')}>Tujuan SDGs</Footer.Link>
+                                <Footer.Link href="#" onClick={() => scrollToSection('hero')}>Pilar SDGs</Footer.Link>
                             </Footer.LinkGroup>
                         </div>
                         <div>
-                            <Footer.Title title="Follow us" />
+                            <Footer.Title title="Program" />
                             <Footer.LinkGroup col>
-                                <Footer.Link href="#">Github</Footer.Link>
-                                <Footer.Link href="#">Discord</Footer.Link>
+                                <Footer.Link href="#" onClick={() => scrollToSection('hero')}>Informasi SDGs</Footer.Link>
+                                <Footer.Link href="#" onClick={() => scrollToSection('hero')}>Infrastruktur SDGs</Footer.Link>
+                                <Footer.Link href="#" onClick={() => scrollToSection('hero')}>FAQ</Footer.Link>
                             </Footer.LinkGroup>
                         </div>
                         <div>
-                            <Footer.Title title="Legal" />
+                            <Footer.Title title="Kontak" />
                             <Footer.LinkGroup col>
-                                <Footer.Link href="#">Privacy Policy</Footer.Link>
-                                <Footer.Link href="#">Terms &amp; Conditions</Footer.Link>
+                                <Footer.Link href="#" onClick={() => scrollToSection('hero')}>Hubungi Kami</Footer.Link>
+                                <Footer.Link href="#" onClick={() => scrollToSection('hero')}>Syarat &amp; Ketentuan</Footer.Link>
                             </Footer.LinkGroup>
                         </div>
                     </div>
