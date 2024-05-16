@@ -1,7 +1,7 @@
-// Import
 import NavbarSection from '../components/Navbar';
-import HeroSection from '../components/Hero';
 import FooterSection from '../components/Footer';
+
+import HeroSection from '../components/Hero';
 
 export default function BerandaSection() {
     return (
@@ -12,14 +12,13 @@ export default function BerandaSection() {
                 </section>
 
                 <section className='beranda-1' id='beranda1'>
-                    <div className='beranda-1  w-full h-screen'>
-                        <HeroSection />
-                    </div>
+                    <HeroSection />
+                    <HeroSection />
                 </section>
 
-                <section className='footer' id='footer'>
+                {/* <section className='footer w-full h-screen' id='footer'>
                     <FooterSection />
-                </section>
+                </section> */}
             </div>
         </>
     );

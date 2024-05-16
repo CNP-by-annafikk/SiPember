@@ -40,7 +40,7 @@ export default function NavbarSection() {
     };
 
     return (
-        <Disclosure as="nav" className="bg-primary fixed w-full z-10 top-0 bg-opacity-100">
+        <Disclosure as="nav" className="bg-primary fixed w-full z-50 top-0 left-0 bg-opacity-100">
             {({ open }) => (
                 <div className="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
                     <div className="flex h-16 items-center justify-between">

@@ -1,12 +1,9 @@
 import React, { useState } from 'react';
-import PageNotFound from './dev/Dev404';
-import FormLogin from '../pages/Login';
 
-// Gunakan URL video yang valid dari YouTube
 const LinkVideo = 'https://www.youtube.com/embed/W9eEX870abo';
 
 export default function HeroSection() {
-    const [showVideo, setShowVideo] = useState(true); // Ubah menjadi true untuk menampilkan video
+    const [showVideo, setShowVideo] = useState(true);
 
     return (
         <div className="px-4 py-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-40 bg-white w-full">
@@ -29,13 +26,13 @@ export default function HeroSection() {
                     </div>
                     <div className="flex flex-col items-center md:flex-row">
                         <a
-                            href="#" // Update the href with the actual URL or route
+                            href="#"
                             className="bg-primary inline-flex items-center justify-center w-full h-12 px-6 mb-3 font-medium tracking-wide text-white transition duration-200 rounded shadow-md md:w-auto md:mr-4 md:mb-0 bg-deep-purple-accent-400 hover:bg-deep-purple-accent-700 focus:shadow-outline focus:outline-none"
                         >
                             <span className="p-2">Mulai</span>
                         </a>
                         <a
-                            href="/login" // Update href to the actual login page URL
+                            href="/login"
                             className="bg-primary inline-flex items-center justify-center w-full h-12 px-6 mb-3 font-medium tracking-wide text-white transition duration-200 rounded shadow-md md:w-auto md:mr-4 md:mb-0 bg-deep-purple-accent-400 hover:bg-deep-purple-accent-700 focus:shadow-outline focus:outline-none"
                         >
                             <span className="p-2">Hubungi Kami</span>
@@ -46,7 +43,7 @@ export default function HeroSection() {
                     {showVideo && (
                         <iframe
                             className="object-cover w-full h-56 rounded shadow-lg md:h-64 lg:h-80"
-                            src={LinkVideo} // Gunakan URL video yang valid
+                            src={LinkVideo}
                             frameBorder="0"
                             allow="autoplay; encrypted-media"
                             allowFullScreen
