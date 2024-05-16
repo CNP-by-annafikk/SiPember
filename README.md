@@ -44,3 +44,9 @@ Currently, there are two official plugins available:
 - [MySQL2](https://www.npmjs.com/package/mysql2)
 - [Cors](https://www.npmjs.com/package/cors)
 - [Express Application Generator](https://expressjs.com/en/starter/generator.html)
+
+## Note :
+Check Dependencies :
+- [npm install -g depcheck]
+- [depcheck]
+- [npm uninstall <package_name>]

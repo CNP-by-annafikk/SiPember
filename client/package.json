@@ -10,30 +10,22 @@
     "preview": "vite preview"
   },
   "dependencies": {
-    "@googlemaps/react-wrapper": "^1.1.35",
     "@headlessui/react": "^1.7.17",
     "@heroicons/react": "^2.0.18",
-    "cors": "^2.8.5",
-    "express": "^4.18.2",
+    "autoprefixer": "^10.4.19",
+    "flowbite": "^2.3.0",
     "flowbite-react": "^0.6.4",
-    "mysql2": "^3.6.3",
+    "postcss": "^8.4.38",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
-    "react-router-dom": "^6.19.0",
-    "react-youtube": "^10.1.0",
-    "sequelize": "^6.35.1"
+    "react-icons": "^5.2.1",
+    "react-router-dom": "^6.19.0"
   },
   "devDependencies": {
-    "@types/react": "^18.2.15",
-    "@types/react-dom": "^18.2.7",
     "@vitejs/plugin-react": "^4.0.3",
-    "autoprefixer": "^10.4.16",
-    "eslint": "^8.45.0",
     "eslint-plugin-react": "^7.32.2",
     "eslint-plugin-react-hooks": "^4.6.0",
     "eslint-plugin-react-refresh": "^0.4.3",
-    "postcss": "^8.4.31",
-    "tailwindcss": "^3.3.5",
     "vite": "^4.4.5"
   }
 }

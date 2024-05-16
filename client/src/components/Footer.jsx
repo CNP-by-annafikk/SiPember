@@ -21,7 +21,7 @@ export default function FooterSection() {
                             <div>
                                 <Footer.Title title="Tentang" />
                                 <Footer.LinkGroup col>
-                                    <Footer.Link href="#beranda1" onClick={() => scrollToSection('hero')}>Pengenalan SDGs</Footer.Link>
+                                    <Footer.Link href="#" onClick={() => scrollToSection('hero')}>Pengenalan SDGs</Footer.Link>
                                     <Footer.Link href="#" onClick={() => scrollToSection('hero')}>Tujuan SDGs</Footer.Link>
                                     <Footer.Link href="#" onClick={() => scrollToSection('hero')}>Pilar SDGs</Footer.Link>
                                 </Footer.LinkGroup>
@@ -48,37 +48,37 @@ export default function FooterSection() {
                         <Footer.Copyright href="#" by="SIPB | All Right Reserved" year={2023} />
                         <div className="mt-4 flex space-x-6 sm:mt-0 sm:justify-center">
                             <Footer.Icon
-                                href="#"
+                                href="https://www.facebook.com/anna.fi.777/"
                                 alt="Facebook"
                                 onClick={() => window.open('https://www.facebook.com/anna.fi.777/')}
                                 icon={BsFacebook}
                             />
                             <Footer.Icon
-                                href="#"
+                                href="https://www.tiktok.com/@hmmppss"
                                 alt="TikTok"
                                 onClick={() => window.open('https://www.tiktok.com/@hmmppss')}
                                 icon={BsTiktok}
                             />
                             <Footer.Icon
-                                href="#"
+                                href="https://www.twitter.com/annafikk1"
                                 alt="TikTok"
                                 onClick={() => window.open('https://www.twitter.com/annafikk1')}
                                 icon={BsTwitter}
                             />
                             <Footer.Icon
-                                href="#"
+                                href="https://github.com/annafikk"
                                 alt="TikTok"
                                 onClick={() => window.open('https://github.com/annafikk')}
                                 icon={BsGithub}
                             />
                             <Footer.Icon
-                                href="#"
+                                href="https://www.linkedin.com/in/muhammad-hanif-annafi/"
                                 alt="TikTok"
                                 onClick={() => window.open('https://www.linkedin.com/in/muhammad-hanif-annafi/')}
                                 icon={BsLinkedin}
                             />
                             <Footer.Icon
-                                href="#"
+                                href="https://discord.gg/tHxj5r2rXh"
                                 alt="TikTok"
                                 onClick={() => window.open('https://discord.gg/tHxj5r2rXh')}
                                 icon={BsDiscord}

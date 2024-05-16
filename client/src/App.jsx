@@ -1,24 +1,37 @@
-// Import
-import React, { Component } from 'react'
-import { BrowserRouter as Router, Routes, Route, Navigate } from 'react-router-dom'
+import React from 'react';
+import { BrowserRouter as Router, Routes, Route, Navigate } from 'react-router-dom';
 
-// Halaman
-import BerandaSection from './pages/Beranda'
+// Pages
+import BerandaSection from './pages/Beranda';
+import TentangSection from './pages/Tentang';
+import ProgramSection from './pages/Program';
+import KontakSection from './pages/Kontak';
+import LoginForm from './pages/Login';
 
-// Dev
-import Dev_Api from './components/dev/DevApi'
-import PageNotFound from './components/dev/Dev404'
+// Development
+import DevApi from './components/dev/DevApi';
+import PageNotFound from './components/dev/Dev404';
 
-export default class App extends Component {
-  render() {
+function App() {
     return (
-      <Router>
-        <Routes>
-          <Route path='/' element={<BerandaSection />} />
-          <Route path='/Dev404' element={<PageNotFound />} />
-          <Route path='*' element={<Navigate to='/Dev404' replace />} />
-        </Routes>
-      </Router>
-    )
-  }
+        <Router>
+            <Routes>
+                {/* Main Pages */}
+                <Route path="/beranda" element={<BerandaSection />} />
+                
+                <Route path="/tentang" element={<TentangSection />} />
+                <Route path="/program" element={<ProgramSection />} />
+                <Route path="/kontak" element={<KontakSection />} />
+                <Route path="/login" element={<LoginForm />} />
+                <Route path="*" element={<Navigate to="/beranda" />} />
+
+                {/* Development */}
+                <Route path="/dev-api" element={<DevApi />} />
+                <Route path="/dev-404" element={<PageNotFound />} />
+
+            </Routes>
+        </Router>
+    );
 }
+
+export default App;
