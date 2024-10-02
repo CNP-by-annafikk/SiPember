@@ -13,7 +13,6 @@ export default function BerandaSection() {
 
                 <section className='beranda-1' id='beranda1'>
                     <HeroSection />
-                    <HeroSection />
                 </section>
 
                 {/* <section className='footer w-full h-screen' id='footer'>

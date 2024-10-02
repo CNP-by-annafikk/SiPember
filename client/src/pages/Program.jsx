@@ -3,7 +3,7 @@ import FooterSection from '../components/Footer';
 
 import GallerySection from '../components/Gallery'
 
-export default function ProgramSection() {
+const ProgramSection =() => {
     function scrollToSection(sectionId) {
         const section = document.getElementById(sectionId);
         if (section) {
@@ -19,7 +19,7 @@ export default function ProgramSection() {
                 </section>
 
                 <section className='beranda-1' id='beranda1'>
-                    <GallerySection />
+                    {/* <GallerySection /> */}
                 </section>
 
                 {/* <section className='footer' id='footer'>
@@ -29,3 +29,5 @@ export default function ProgramSection() {
         </>
     );
 }
+
+export default ProgramSection

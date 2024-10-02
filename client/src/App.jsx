@@ -12,7 +12,7 @@ import LoginForm from './pages/Login';
 import DevApi from './components/dev/DevApi';
 import PageNotFound from './components/dev/Dev404';
 
-function App() {
+const App = () => {
     return (
         <Router>
             <Routes>

@@ -19,7 +19,7 @@ export default function TentangSection() {
                 </section>
 
                 <section className='beranda-1' id='beranda1'>
-                    <GallerySection />
+                    {/* <GallerySection /> */}
                 </section>
 
                 {/* <section className='footer' id='footer'>
