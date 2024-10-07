@@ -1,9 +1,16 @@
 import NavbarSection from '../components/Navbar';
 import FooterSection from '../components/Footer';
 
-import HeroSection from '../components/Hero';
+import GallerySection from '../components/Gallery'
 
-export default function BerandaSection() {
+const ProgramSection =() => {
+    function scrollToSection(sectionId) {
+        const section = document.getElementById(sectionId);
+        if (section) {
+            section.scrollIntoView({ behavior: 'smooth' });
+        }
+    }
+
     return (
         <>
             <div id='beranda'>
@@ -12,13 +19,15 @@ export default function BerandaSection() {
                 </section>
 
                 <section className='beranda-1' id='beranda1'>
-                    <HeroSection />
+                    {/* <GallerySection /> */}
                 </section>
 
-                {/* <section className='footer w-full h-screen' id='footer'>
+                {/* <section className='footer' id='footer'>
                     <FooterSection />
                 </section> */}
             </div>
         </>
     );
 }
+
+export default ProgramSection
